@@ -1,0 +1,42 @@
+---
+title       : Slidify project   
+subtitle    : How to predict petal width, iris flower data
+author      : A.B.K
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+logo        : pic.jpg
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+github:
+user: alishway
+repo: slidify_project
+---
+
+## Slide 1
+
+Iris flower data set
+
+> 1. Point 1
+> 2. Point 2
+> 3. Point 3
+
+---
+
+## Charts and Graphics
+
+```{r echo=TRUE, results= 'asis', message = FALSE}
+```{r message = F, results = 'asis', comment = NA, echo = F}
+require(googleVis)
+M1 = gvisMotionChart(Fruits, idvar = 'Fruit', timevar = "Year", options=list(width=600, height=400))
+print(M1, tag = 'chart')
+```
+```
+---
+
+
+
+
+
